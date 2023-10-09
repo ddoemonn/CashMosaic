@@ -48,7 +48,7 @@ describe('Header', () => {
             level: 3
         });
 
-        expect(yourBalance).toBeNull();
+        expect(yourBalance).not.toBeInTheDocument();
     })
 
 

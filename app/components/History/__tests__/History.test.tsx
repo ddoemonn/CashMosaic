@@ -41,7 +41,7 @@ describe('History',() => {
 
         const firstLiLabel = screen.queryByRole('list')
 
-        expect(firstLiLabel).toBeNull()
+        expect(firstLiLabel).not.toBeInTheDocument();
     })
 
     it('should call actionDelete function when delete button is clicked', async () => {
