@@ -6,7 +6,7 @@ import { expenses } from '../../expenses'
 describe('Header', () => {
 
     it('should render the "Expense Tracker" heading', () => {
-        render(<Header expenses={expenses}/>);
+        render(<Header />);
 
         const header = screen.getByRole('heading',{
             name: 'Expense Tracker'
@@ -16,7 +16,7 @@ describe('Header', () => {
     })
     
     it('should render the balance ', () => {
-        render(<Header expenses={expenses}/>);
+        render(<Header />);
 
         const balance = screen.getByRole("heading",{
             level: 1,
@@ -26,7 +26,7 @@ describe('Header', () => {
     })
 
     it('should render the income ', () => {
-        render(<Header expenses={expenses}/>);
+        render(<Header/>);
 
         const income = screen.getByTestId("income");
 
@@ -34,7 +34,7 @@ describe('Header', () => {
     })
 
     it('should render the expense ', () => {
-        render(<Header expenses={expenses}/>);
+        render(<Header />);
 
         const expense = screen.getByTestId("expense");
 
@@ -42,7 +42,7 @@ describe('Header', () => {
     })
 
     it('should render with an empty array', () => {
-        render(<Header expenses={[]}/>);
+        render(<Header />);
 
         const yourBalance = screen.queryByRole('heading',{
             level: 3

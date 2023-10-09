@@ -17,7 +17,7 @@ jest.mock('../../../actions/actionDelete.tsx', () => {
 describe('History',() => {
 
     it('should render expense array in the correct order', () => {
-        render(<History expenses={expenses} />);
+        render(<History />);
 
         const firstLiItem = screen.getAllByTestId("label")[0]
 
@@ -28,7 +28,7 @@ describe('History',() => {
     })
 
     it('should render a list with the correct number of items', () => {
-        render(<History expenses={expenses} />);
+        render(<History  />);
 
         const expenseArray = screen.getAllByRole('listitem')
 
@@ -37,7 +37,7 @@ describe('History',() => {
     })
 
     it('should not render History when the array is empty', () => {
-        render(<History expenses={[]} />) 
+        render(<History />) 
 
         const firstLiLabel = screen.queryByRole('list')
 
@@ -45,7 +45,7 @@ describe('History',() => {
     })
 
     it('should call actionDelete function when delete button is clicked', async () => {
-        render(<History expenses={expenses} />);
+        render(<History />);
 
         const deleteButton = screen.getByTestId('delete-button-1');
         fireEvent.click(deleteButton);
