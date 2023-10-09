@@ -14,7 +14,7 @@ export default async function page() {
             {session ? (
                     <section className='flex flex-col items-center mt-5'>
                             <Header />
-                            <section className='flex'>
+                            <section className='flex flex-col sm:flex-row'>
                                 <HistoryIncome />
                                 <HistoryExpense />
                             </section>

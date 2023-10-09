@@ -51,9 +51,9 @@ export default function Form() {
     
     return (
         <form   ref={ref} onSubmit={handleSubmit}
-        className='m-2 flex  bg-slate-200 p-3 rounded-2xl font-medium'>
-            <input type="text" name='name' placeholder='New Expense' className='mr-2 rounded-2xl p-1 pl-3' />
-            <input type="number" name='amount' placeholder='Add Amount' className=' mr-4 rounded-2xl p-1 pl-3' />
+        className='m-2 flex  bg-slate-200 p-3 px-8 rounded-2xl font-medium flex-col sm:flex-row w-full sm:w-[660px]'>
+            <input type="text" name='name' placeholder='New Expense'    className=' mr-4 mb-2 rounded-2xl p-1 pl-3' />
+            <input type="number" name='amount' placeholder='Add Amount' className=' mr-4 mb-2 rounded-2xl p-1 pl-3' />
             {loading_state ? (
                 <button type='submit' >Loading</button>    
             ):(

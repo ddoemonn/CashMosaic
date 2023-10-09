@@ -13,7 +13,7 @@ export default function History() {
 
     
     return (
-        <section className=' w-[630px] mt-10 mb-3'>
+        <section className=' sm:w-[630px]  mt-10 mb-3'>
             <h2 className='text-4xl font-semibold mb-2  '>History</h2>
             <HistoryLayout expenses={expenses_state} />
         </section>

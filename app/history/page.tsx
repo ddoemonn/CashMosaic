@@ -14,9 +14,9 @@ export default  function page() {
         <>
             {session ? (
                         <section className='flex flex-col items-center '>
-                        <History  />
-                        <Form />
-                    </section>
+                            <History  />
+                            <Form />
+                        </section>
             ):(
                 <h2 className='text-2xl font-medium mt-10'>You do not have permission to access this page until you are signed in</h2>
             )}

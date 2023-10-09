@@ -41,29 +41,29 @@ export default  function page() {
     return (
         <>
             {session ? (
-                <section className='flex flex-col justify-center items-center'>
-                <label htmlFor="charts" className="block mb-2 mt-3 text-xl font-medium text-gray-900 dark:text-white w-[620px]">Select a chart type</label>
-                <select 
-                    id="charts" 
-                    className="w-[620px] mb-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 "
-                    value={select}
-                    onChange={(e) => setSelect(e.target.value)}
-                >
-                <option value="line">Line Chart</option>
-                <option value="bar">Bar Chart</option>
-                <option value="pie">Pie Chart</option>
-                </select>
-                {select === 'line' &&  <LineChart  props={select} expenses_state={temp}/> }
-                {select === 'bar' &&  <BarChart  props={select} expenses_state={temp}/>}
-                {select === 'pie' &&  <PieChart  props={select} expenses_state={pie}/>}
-                {select !== 'pie' && (
-                    <aside className='flex  justify-center w-full mt-3 text-center'>
-                        <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expenses_state)}>Total</button>
-                        <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expense)}>Expenses</button>
-                        <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(income)}>Incomes</button>
-                    </aside>
-                
-                )}
+                <section className='flex flex-col justify-center items-center px-1 overflow-x-hidden'>
+                    <label htmlFor="charts" className="block text-center sm:text-left mb-2 mt-3 text-xl font-medium text-gray-900 dark:text-white w-[620px]">Select a chart type</label>
+                    <select 
+                        id="charts" 
+                        className="sm:w-[620px] mb-3 w-[310px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 "
+                        value={select}
+                        onChange={(e) => setSelect(e.target.value)}
+                    >
+                    <option value="line">Line Chart</option>
+                    <option value="bar">Bar Chart</option>
+                    <option value="pie">Pie Chart</option>
+                    </select>
+                    {select === 'line' &&  <LineChart  props={select} expenses_state={temp}/> }
+                    {select === 'bar' &&  <BarChart  props={select} expenses_state={temp}/>}
+                    {select === 'pie' &&  <PieChart  props={select} expenses_state={pie}/>}
+                    {select !== 'pie' && (
+                        <aside className='flex  justify-center w-full my-3 sm:mb-1 text-center'>
+                            <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expenses_state)}>Total</button>
+                            <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expense)}>Expenses</button>
+                            <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(income)}>Incomes</button>
+                        </aside>
+                    
+                    )}
     
                 
     
