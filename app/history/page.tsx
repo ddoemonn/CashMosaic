@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../GlobalRedux/store';
 import { useSession } from "next-auth/react";
 
-export default  function page() {
+export default  function Page() {
     const { data: session } = useSession();
     const expenses_state = useSelector((state: RootState) => state.expenses.expenses);
 

@@ -6,7 +6,7 @@ import HistoryIncome from '../components/Header/HistoryIncome';
 import HistoryExpense from '../components/Header/HistoryExpense';
 
 
-export default async function page() {
+export default async function Page() {
     const session = await getServerSession();
 
     return (

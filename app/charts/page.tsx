@@ -10,7 +10,7 @@ import { useSession } from "next-auth/react";
 
 
 
-export default  function page() {
+export default  function Page() {
     const { data: session } = useSession();
     const [select, setSelect] = useState<string>('line')
     const expenses_state = useSelector((state: RootState) => state.expenses.expenses)
