@@ -1,0 +1,51 @@
+{
+  "name": "next-testing-intro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "@next-auth/prisma-adapter": "^1.0.7",
+    "@prisma/client": "^5.3.1",
+    "@reduxjs/toolkit": "^1.9.6",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "chart.js": "^4.4.0",
+    "d3": "^7.8.5",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.17",
+    "next": "^13.4.10",
+    "postcss": "8.4.28",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-redux": "^8.1.2",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/d3": "^7.4.1",
+    "@types/testing-library__react": "^10.2.0",
+    "@types/uuid": "^9.0.4",
+    "eslint-plugin-jest-dom": "^5.0.2",
+    "eslint-plugin-testing-library": "^6.0.0",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "jest-mock-extended": "^3.0.5",
+    "prisma": "^5.3.1",
+    "ts-jest": "^29.1.1"
+  }
+}
