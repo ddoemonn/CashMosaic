@@ -93,7 +93,7 @@ export default function LineChart({props, expenses_state} : {props: string, expe
 
     return (
         <section className='h-[500px] mr-1'>
-            <Chart  ref={chartRef} options={options} type='pie' data={data} height={200} width={620}  />
+            <Chart  ref={chartRef} options={options} type='pie' data={data} height={200} width={720}  />
         </section>
     );
         

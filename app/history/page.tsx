@@ -18,7 +18,7 @@ export default  function page() {
                         <Form />
                     </section>
             ):(
-                <h2>Fuck off</h2>
+                <h2 className='text-2xl font-medium mt-10'>You do not have permission to access this page until you are signed in</h2>
             )}
         </>
         

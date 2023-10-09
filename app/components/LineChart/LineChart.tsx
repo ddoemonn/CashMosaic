@@ -46,10 +46,18 @@ export const options = {
     maintainAspectRatio: false,
     scales: {
         x: {
-
+            ticks:{
+                font:{
+                    size: 15
+                }
+            }
         },
         y: {
-            
+            ticks:{
+                font:{
+                    size: 15,
+                }
+            }
         },
     },
 };
@@ -89,7 +97,7 @@ export default function LineChart({props, expenses_state} : {props: string, expe
 
     return (
         <section className='h-[500px] mr-1'>
-            <Chart  ref={chartRef} options={options} type='line' data={data} height={200} width={620}  />
+            <Chart  ref={chartRef} options={options} type='line' data={data} height={200} width={820}  />
         </section>
     );
         

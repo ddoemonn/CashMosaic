@@ -57,10 +57,10 @@ export default  function page() {
                 {select === 'bar' &&  <BarChart  props={select} expenses_state={temp}/>}
                 {select === 'pie' &&  <PieChart  props={select} expenses_state={pie}/>}
                 {select !== 'pie' && (
-                    <aside className='flex  justify-center w-full mt-6 text-center'>
-                        <button className='mx-8 bg-slate-200 p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expenses_state)}>Total</button>
-                        <button className='mx-8 bg-slate-200 p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expense)}>Expenses</button>
-                        <button className='mx-8 bg-slate-200 p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(income)}>Incomes</button>
+                    <aside className='flex  justify-center w-full mt-3 text-center'>
+                        <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expenses_state)}>Total</button>
+                        <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(expense)}>Expenses</button>
+                        <button className='mx-8 bg-slate-300 focus:outline-none p-1 border-2 px-3 rounded-xl focus:border-slate-400' onClick={() => setTemp(income)}>Incomes</button>
                     </aside>
                 
                 )}
@@ -70,7 +70,7 @@ export default  function page() {
                 
             </section>
             ):(
-                <h2>Fuck off</h2>
+                <h2 className='text-2xl font-medium mt-10'>You do not have permission to access this page until you are signed in</h2>
             )}
         </>
         

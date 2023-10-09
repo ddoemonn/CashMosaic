@@ -21,7 +21,8 @@ export default function Profile() {
                                         className=" bg-sky-700 text-white rounded-xl shadow-sm border-2 ">Sign Out</button>
                             </section>
             ):(
-                <h2>Fuck off</h2>
+                <h2 className='text-2xl font-medium mt-10'>You do not have permission to access this page until you are signed in</h2>
+            
             )}
         </section>
         
