@@ -9,14 +9,12 @@ import {
     LineElement,
     Title,
     Tooltip,
-    Filler,
-    BarElement,
     Legend,
 } from 'chart.js';
+import { Line } from 'react-chartjs-2'
 
 
 
-import {  Chart } from 'react-chartjs-2';
 import ChartBackgroundPlugin from './ChartBackgroundPlugin';
 import { expense } from '@/app/types/Expense';
 
@@ -24,13 +22,11 @@ ChartJS.register(
     CategoryScale,
     LinearScale,
     PointElement,
-    BarElement,
     LineElement,
     Title,
     Tooltip,
-    Filler,
     Legend,
-    ChartBackgroundPlugin
+    ChartBackgroundPlugin,
 );
 
 
@@ -65,16 +61,6 @@ export const options = {
 
 
 export default function LineChart({props, expenses_state} : {props: string, expenses_state: expense[]}) {
-    const chartRef = useRef<ChartJS>(null);
-
-    useEffect(() => {
-        const chart = chartRef.current  ;
-        
-        if (chart) {
-            const ctx = chart.ctx;
-            const canvas = chart.canvas;
-        }
-    }, []);
 
     //const expenses_state = useSelector((state: RootState) => state.expenses.expenses);
     const labels1 = expenses_state.map(expense => expense.name);
@@ -97,7 +83,7 @@ export default function LineChart({props, expenses_state} : {props: string, expe
 
     return (
         <section className='h-[500px] mr-1 w-[400px] sm:w-[820px]'>
-            <Chart  ref={chartRef} options={options} type='line' data={data} height={200} width={820}  />
+            <Line   options={options}  data={data} height={200} width={820}  />
         </section>
     );
         
