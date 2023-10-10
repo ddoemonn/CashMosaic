@@ -10,7 +10,7 @@ export default function LoadData(expenses: TExpenses) {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(setExpenses(expenses.expenses))
-    }, [])
+    }, [dispatch, expenses.expenses])
     
         
     return (
