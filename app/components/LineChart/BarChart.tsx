@@ -1,39 +1,30 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
     LinearScale,
-    PointElement,
-    LineElement,
+    BarElement,
     Title,
     Tooltip,
-    Filler,
-    BarElement,
     Legend,
 } from 'chart.js';
 
 
-
-import {  Chart } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import ChartBackgroundPlugin from './ChartBackgroundPlugin';
 import { expense } from '@/app/types/Expense';
 
 ChartJS.register(
     CategoryScale,
     LinearScale,
-    PointElement,
     BarElement,
-    LineElement,
     Title,
     Tooltip,
-    Filler,
     Legend,
     ChartBackgroundPlugin
 );
-
-
 export const options = {
     responsive: true,
     chartArea: {
@@ -59,16 +50,6 @@ export const options = {
 
 
 export default function LineChart({props, expenses_state} : {props: string, expenses_state: expense[]}) {
-    const chartRef = useRef<ChartJS>(null);
-
-    useEffect(() => {
-        const chart = chartRef.current  ;
-        
-        if (chart) {
-            const ctx = chart.ctx;
-            const canvas = chart.canvas;
-        }
-    }, []);
 
     //const expenses_state = useSelector((state: RootState) => state.expenses.expenses);
     const labels1 = expenses_state.map(expense => expense.name);
@@ -91,7 +72,7 @@ export default function LineChart({props, expenses_state} : {props: string, expe
 
     return (
         <section className='h-[500px] mr-1 w-[400px] sm:w-[820px]'>
-            <Chart  ref={chartRef} options={options} type='bar' data={data} height={200} width={720}  />
+            <Bar   options={options}  data={data} height={200} width={720}  />
         </section>
     );
         
