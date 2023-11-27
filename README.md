@@ -15,6 +15,7 @@ Simplify your finances with CashMosaic – the intuitive expense tracker app. No
 - **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
 - **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
 - **Jest:** A popular JavaScript testing framework.
+- **React Testing Library:** A simple and complete testing library for React applications.
 - **Prisma:** A modern database toolkit for TypeScript and Node.js.
 - **NextAuth:** An authentication library for Next.js applications.
 - **Redux:** A state management library for JavaScript applications.
