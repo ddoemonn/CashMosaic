@@ -4,16 +4,12 @@ Simplify your finances with CashMosaic – the intuitive expense tracker app. No
 
 ## Features
 
-CashMosaic Expense Tracker App offers essential features to enhance your financial management experience:
-
 - **Interactive Charts:** Gain insights with bar, line, and pie charts to analyze spending habits.
 - **Secure User Authentication:** Create accounts, log in securely, and access personalized data for privacy.
 - **Balance Overview:** See account balances ranked highest to lowest for effective expense prioritization.
 - **Transaction History:** Easily review and analyze past expenses to track financial progress.
 
 ## Technologies Used
-
-CashMosaic is powered by the following technologies:
 
 - **Next.js:** A React framework for building server-rendered applications.
 - **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
