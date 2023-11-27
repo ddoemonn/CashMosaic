@@ -18,3 +18,4 @@ Simplify your finances with CashMosaic – the intuitive expense tracker app. No
 - **Prisma:** A modern database toolkit for TypeScript and Node.js.
 - **NextAuth:** An authentication library for Next.js applications.
 - **Redux:** A state management library for JavaScript applications.
+- **Chart.js:** A simple yet flexible JavaScript charting library.
