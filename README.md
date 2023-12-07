@@ -20,3 +20,7 @@ Simplify your finances with CashMosaic – the intuitive expense tracker app. No
 - **NextAuth:** An authentication library for Next.js applications.
 - **Redux:** A state management library for JavaScript applications.
 - **Chart.js:** A simple yet flexible JavaScript charting library.
+
+## Screenshots
+ ![Image 8 12 2023 at 01 51 (1)](https://github.com/ozergklp/CashMosaic/assets/109994179/196857ad-a7f8-46fc-be10-0cfd9a42d2dc)
+
