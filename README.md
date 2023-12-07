@@ -22,5 +22,8 @@ Simplify your finances with CashMosaic – the intuitive expense tracker app. No
 - **Chart.js:** A simple yet flexible JavaScript charting library.
 
 ## Screenshots
- ![Image 8 12 2023 at 01 51 (1)](https://github.com/ozergklp/CashMosaic/assets/109994179/196857ad-a7f8-46fc-be10-0cfd9a42d2dc)
+![Image 8 12 2023 at 01 50](https://github.com/ozergklp/CashMosaic/assets/109994179/8fac3b31-f165-4e77-bebd-a2397f87121e)
+![Image 8 12 2023 at 01 51](https://github.com/ozergklp/CashMosaic/assets/109994179/b88e4798-84f1-4011-aac9-7df10995159f)
+![Image 8 12 2023 at 01 51 (1)](https://github.com/ozergklp/CashMosaic/assets/109994179/196857ad-a7f8-46fc-be10-0cfd9a42d2dc)
+
 
